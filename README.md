@@ -21,6 +21,8 @@
 >Đây là đồ án tốt nghiệp của tụi mình. Tụi mình sẽ xây dựng `2` mô hình. Mình phụ trách `mô hình 2` nên sẽ đề cập `mô hình 2` tại đây
 
 >Hảo.
+
+>Link chứa model: `https://mega.nz/folder/9uhDyIYS#-YFNLBI9gts7H1AaittsYw`
 ```
 "GAN cho tô màu ảnh xám"
 ```
