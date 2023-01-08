@@ -16,7 +16,7 @@ app = Flask(__name__)
 def predict_color_COCO(img_path):
     model_path = "./model_weights_80_epochs.pth"
     colorized_image = to_mau_anh_xam(model_path, img_path)
-    image_colorized_output = "static/color/" + "colorized_ouput_" + ".jpg"
+    image_colorized_output = "static/color/" + "colorized_ouput" + ".jpg"
     matplotlib.pyplot.imsave(image_colorized_output, colorized_image)
     return image_colorized_output
 
