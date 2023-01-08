@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GAN cho tô màu ảnh xám</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- <style>
+    body {background-color:rgb(23, 19, 19)}
+    h1 {color:blue}
+    p {color:green}
+    </style> -->
+</head>
+<body>
+
+<div class="container trangchu" style="background: linear-gradient(135deg,#ffffff 100%, #878786 0%); ">
+  <h1 class="jumbotron bg-primary " style="color:#000000; background: linear-gradient(135deg,#ffffff 0%, #060606 100%);box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);border-radius: 0 0 20px 0;">GAN cho tô màu ảnh xám</h1>
+  <!-- <br><br> -->
+  <form class="form-horizontal" action="/" method="post" enctype="multipart/form-data">
+    <script>
+      function changeAction(val) {
+          document.forms[0].action = val;
+      }
+    </script>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Upload Your Image :</label>
+      <div class="col-sm-10">         
+        <input type="file" class="form-control" placeholder="Hours Studied"  name="my_image" id="pwd">
+      </div>
+    </div>
+
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-success" onclick="changeAction('/COCO')">COCO</button>
+        <button type="submit" class="btn btn-success" onclick="changeAction('/landscape')">Landscape</button>
+        <button type="submit" class="btn btn-success" onclick="changeAction('/landscapemohinh1')">Landscape Mô Hình 1</button>
+        <button type="submit" class="btn btn-success" onclick="changeAction('/COCOmohinh1')">COCO Mô Hình 1</button>
+      </div>
+    </div>
+  </form>
+ 
+
+  <div class="form-group">
+    <img src="{{img_path}}" height="450px" width="450px" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);" alt="Ảnh xám">
+    <!-- <h2> Your Prediction   : <i> {{prediction}} </i></h2> -->
+    <div style="display: inline-block; padding: 0 20px;">
+      <p>Original to Color image</p>
+
+    </div>
+    <img src="{{color_path}}" height="450px" width="450px" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);" alt="Ảnh tô màu">
+  </div>
+
+  <div style="padding: 40px;">
+    <p>Đồ án tốt nghiệp: GAN cho tô màu ảnh xám</p>
+    <div>
+      <a href="https://www.facebook.com/vanthuonglun.nguyen">Nguyễn Văn Thương</a>
+    </div>
+    <div>
+      <a href="https://www.facebook.com/nguyenhao612/">Nguyễn Trần Long Hảo</a>
+    </div>
+    <div style="padding: 40px;">
+
+    </div>
+  </div>
+  
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
