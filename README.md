@@ -4,6 +4,8 @@
 <h3 align="center">GVHD: TS. Hồ Phước Tiến</h3>
 <p align="center">
 
+  `Kết quả đã thực hiện được`
+  
   `Ground truth`
   -------------------->
   `Colorized output`
@@ -46,8 +48,8 @@ Mình khuyên bạn nên tìm hiểu thêm về (hay lắm >.<):
 
 ## 🚀 2. Generator
 
-## 🚀 4. Discriminator
+## 🚀 3. Discriminator
 
-## 🚀 5. Hàm mất mát
+## 🚀 4. Hàm mất mát
 
-## ❤️ 6. Kết quả
+## ❤️ 5. Kết quả
