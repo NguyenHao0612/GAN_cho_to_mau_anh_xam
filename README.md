@@ -79,6 +79,21 @@ Kiến trúc của bộ phân biệt ( discriminator ) này thực hiện một 
 > Ở đây sử dụng "Patch" Discriminator. Trong một vanilla discriminator, mô hình xuất ra một số (một tỷ lệ) đại diện cho mức độ mà mô hình nghĩ rằng đầu vào (là toàn bộ hình ảnh) là thật (hoặc giả). Trong patch discriminator, mô hình xuất ra một số cho mỗi patch 70 x 70 pixel của hình ảnh đầu vào và đối với mỗi patch sẽ quyết định xem nó có phải là giả hay không một cách riêng biệt. Sử dụng một mô hình như vậy cho nhiệm vụ chỉnh màu có vẻ hợp lý đối. Bởi vì những thay đổi cục bộ mà mô hình cần thực hiện thực sự quan trọng và có thể quyết định đến toàn bộ hình ảnh, như trong vanilla discriminator không thể quan tâm đến sự tinh tế của nhiệm vụ này. Ở đây, hình dạng đầu ra của mô hình là 30 x 30.
 
 ## 🚀 4. Hàm mất mát
+  
+`Tóm tắt thông số `
+
+| Operator         | Description                                                         |
+|------------------|---------------------------------------------------------------------|
+| ``x``            | Ảnh xám (1 kênh thang độ xám ``L``)                                 |
+| ``y``            | Giá trị màu gốc( 2 kênh màu ``a`` and ``b``)                        |
+| ``G(x)``         | Giá trị màu được tạo ra từ Generator ( 2 kênh màu ``a`` and ``b``)  |
+| ``D(x, y)``      | Đánh giá ảnh gốc là ảnh thật                                        |
+| ``D(x, G(x))``   | Đánh giá ảnh được tạo ra từ Generator là thật hay giả               |
+| ``D``            | Mô hình Discriminator                                               |
+| ``G``            | Mô hình Generator                                                   |
+
+<span style="display:none"></span>
+  
 <img src="https://i.pinimg.com/originals/72/33/35/723335e95dd8dd03050a4d0c6613a443.png">
   
 <img src="https://i.pinimg.com/originals/0c/98/e0/0c98e03fc690e2afac4eae469e5391cd.png">
